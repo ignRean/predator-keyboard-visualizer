@@ -1,0 +1,27 @@
+OpenRGB/PredatorSense mode before test: METEOR
+
+[1] Reading current state from firmware
+  GetGamingLED(1) -> ([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0)
+  GetGamingLED(2) -> ([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 1)
+  GetGamingLED(4) -> ([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 1)
+  GetGamingLED(8) -> ([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0)
+  GetGamingLED(15) -> ([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0)
+  GetGamingKBBacklight(0) -> ([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 1)
+  GetGamingKBBacklight(1) -> ([0, 0, 50, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0], 0)
+
+[2] Setting zones directly. Watch the keyboard.
+  format variant/4 bytes: ERROR com_error(-2147352567, 'Exception occurred.', (0, 'SWbemObjectEx', 'Invalid parameter ', None, 0, -2147217400), None)
+    pywintypes.com_error: (-2147352567, 'Exception occurred.', (0, 'SWbemObjectEx', 'Invalid parameter ', None, 0, -2147217400), None)
+  format variant/11 bytes: ERROR com_error(-2147352567, 'Exception occurred.', (0, 'SWbemObjectEx', 'Invalid parameter ', None, 0, -2147217400), None)
+    pywintypes.com_error: (-2147352567, 'Exception occurred.', (0, 'SWbemObjectEx', 'Invalid parameter ', None, 0, -2147217400), None)
+  format bytes/4 bytes: ERROR com_error(-2147352567, 'Exception occurred.', (0, 'SWbemObjectEx', 'Invalid parameter ', None, 0, -2147217400), None)
+    pywintypes.com_error: (-2147352567, 'Exception occurred.', (0, 'SWbemObjectEx', 'Invalid parameter ', None, 0, -2147217400), None)
+  format bytes/11 bytes: ERROR com_error(-2147352567, 'Exception occurred.', (0, 'SWbemObjectEx', 'Invalid parameter ', None, 0, -2147217400), None)
+    pywintypes.com_error: (-2147352567, 'Exception occurred.', (0, 'SWbemObjectEx', 'Invalid parameter ', None, 0, -2147217400), None)
+  format list/4 bytes: ERROR com_error(-2147352567, 'Exception occurred.', (0, 'SWbemObjectEx', 'Invalid parameter ', None, 0, -2147217400), None)
+    pywintypes.com_error: (-2147352567, 'Exception occurred.', (0, 'SWbemObjectEx', 'Invalid parameter ', None, 0, -2147217400), None)
+  format list/11 bytes: ERROR com_error(-2147352567, 'Exception occurred.', (0, 'SWbemObjectEx', 'Invalid parameter ', None, 0, -2147217400), None)
+    pywintypes.com_error: (-2147352567, 'Exception occurred.', (0, 'SWbemObjectEx', 'Invalid parameter ', None, 0, -2147217400), None)
+  No format worked.
+
+Restored PredatorSense mode: METEOR

@@ -1,0 +1,14 @@
+OpenRGB/PredatorSense mode before test: METEOR
+
+[1] Reading current state from firmware
+  GetGamingLED(1) -> ([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0)
+  GetGamingLED(2) -> ([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 1)
+  GetGamingLED(4) -> ([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 1)
+  GetGamingLED(8) -> ([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0)
+  GetGamingLED(15) -> ([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0)
+  GetGamingKBBacklight(0) -> ([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 1)
+  GetGamingKBBacklight(1) -> ([6, 9, 25, 0, 2, 160, 0, 255, 3, 0, 0, 0, 0, 0, 0], 0)
+
+[2] Setting zones directly. Watch the keyboard.
+
+Restored PredatorSense mode: METEOR

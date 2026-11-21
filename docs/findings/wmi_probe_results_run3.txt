@@ -1,0 +1,17 @@
+OpenRGB/PredatorSense mode before test: METEOR
+
+[1] Reading current state from firmware
+  GetGamingRgbKb(1) -> '4278231040'
+  GetGamingRgbKb(2) -> '4278231040'
+  GetGamingRgbKb(4) -> '4278231040'
+  GetGamingRgbKb(8) -> '4278231040'
+  GetGamingRgbKb(15) -> '0'
+  GetGamingKBBacklight(0) -> ([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 1)
+  GetGamingKBBacklight(1) -> ([6, 9, 25, 0, 1, 160, 0, 255, 3, 0, 0, 0, 0, 0, 0], 0)
+
+[2] Setting zones directly. Watch the keyboard.
+  SetGamingRgbKb as str: return=0, took 17.9 ms, left zone red: n
+  SetGamingRgbKb as int: return=0, took 24.2 ms, left zone red: n
+  No format worked.
+
+Restored PredatorSense mode: METEOR

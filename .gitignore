@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+
+# Local-only
+_backup_v1/
+.claude/
+
+# Recordings and probe output (recordings may contain copyrighted music)
+*.npy
+/stall_results.json
+/wmi_probe_results.txt

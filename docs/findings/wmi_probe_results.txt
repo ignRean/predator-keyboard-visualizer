@@ -1,0 +1,38 @@
+OpenRGB/PredatorSense mode before test: METEOR
+
+[1] Reading current state from firmware
+  GetGamingRgbKb(1) -> '4278231040'
+  GetGamingRgbKb(2) -> '4278231040'
+  GetGamingRgbKb(4) -> '4278231040'
+  GetGamingRgbKb(8) -> '4278231040'
+  GetGamingRgbKb(15) -> '0'
+  GetGamingKBBacklight(0) -> ([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 1)
+  GetGamingKBBacklight(1) -> ([6, 9, 25, 0, 2, 160, 0, 255, 3, 0, 0, 0, 0, 0, 0], 0)
+
+[2] Setting zones directly. Watch the keyboard.
+  A (OpenRGB Direct mode): sent 0x0000ff01, return=0, took 14.6 ms
+     read back now:   0x0000ff00 (R=255, G=0, B=0, b0=0)
+     read back +1 s:  0x0000ff00 (R=255, G=0, B=0, b0=0)
+     KBBacklight now: ([0, 0, 50, 0, 0, 255, 0, 0, 3, 0, 0, 0, 0, 0, 0], 0)
+     user saw it: n
+
+  B: setting firmware static mode, whole keyboard blue, brightness 100
+  SetGamingKBBacklight([0, 0, 100, 0, 0, 0, 0, 255, 3]...) as variant: return=1, took 19.3 ms
+     user saw whole keyboard blue: n
+     KBBacklight now: ([0, 0, 50, 0, 0, 255, 0, 0, 3, 0, 0, 0, 0, 0, 0], 0)
+  B (firmware static mode): sent 0x0000ff01, return=0, took 13.9 ms
+     read back now:   0x0000ff00 (R=255, G=0, B=0, b0=0)
+     read back +1 s:  0x0000ff00 (R=255, G=0, B=0, b0=0)
+     KBBacklight now: ([0, 0, 50, 0, 0, 255, 0, 0, 3, 0, 0, 0, 0, 0, 0], 0)
+     user saw it: n
+
+  C: static mode with byte 8 = 0
+  SetGamingKBBacklight([0, 0, 100, 0, 0, 0, 0, 255, 0]...) as variant: return=1, took 26.0 ms
+  C (static, byte8=0): sent 0x0000ff01, return=0, took 17.0 ms
+     read back now:   0x0000ff00 (R=255, G=0, B=0, b0=0)
+     read back +1 s:  0x0000ff00 (R=255, G=0, B=0, b0=0)
+     KBBacklight now: ([0, 0, 50, 0, 0, 255, 0, 0, 3, 0, 0, 0, 0, 0, 0], 0)
+     user saw it: n
+  No approach made a single zone change.
+
+Restored PredatorSense mode: METEOR
